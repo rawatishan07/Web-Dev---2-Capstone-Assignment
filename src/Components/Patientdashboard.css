@@ -1,0 +1,131 @@
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card .val {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.stat-card .lbl {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.section-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.empty {
+  background: #f9fafb;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.empty p {
+  color: #6b7280;
+}
+
+.appt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.appt-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appt-left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.appt-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.appt-avatar.completed {
+  background: #9ca3af;
+}
+
+.appt-name {
+  font-weight: 600;
+}
+
+.appt-time {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.appt-reason {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.upcoming {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-badge.done {
+  background: #d1d5db;
+  color: #374151;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
