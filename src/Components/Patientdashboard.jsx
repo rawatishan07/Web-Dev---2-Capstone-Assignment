@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./PatientDashboard.css";
+import "./Patientdashboard.css";
 
 export default function PatientDashboard({ appointments }) {
   const upcoming = appointments.filter((a) => a.status === "upcoming");
